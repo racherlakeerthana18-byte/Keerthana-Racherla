@@ -438,7 +438,6 @@ h3 {
 .project-card,
 .experience-card,
 .cert-card,
-.achievement-card,
 .contact-form,
 .contact-details {
   border: 1px solid var(--line);
@@ -613,8 +612,7 @@ h3 {
 
 .skill-card:hover,
 .project-card:hover,
-.cert-card:hover,
-.achievement-card:hover {
+.cert-card:hover {
   transform: translateY(-5px);
   border-color: color-mix(in srgb, var(--accent) 42%, var(--line));
 }
@@ -787,7 +785,6 @@ h3 {
 .timeline-item p,
 .experience-card p,
 .cert-card p,
-.achievement-card p,
 .section-heading p:not(.eyebrow) {
   margin-bottom: 0;
   color: var(--muted);
@@ -861,42 +858,6 @@ h3 {
 
 .cert-card .small-link {
   margin: 18px 22px 22px;
-}
-
-.achievement-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.achievement-card {
-  min-height: 220px;
-  padding: 24px;
-  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
-}
-
-.achievement-icon {
-  display: grid;
-  width: 54px;
-  height: 54px;
-  margin-bottom: 22px;
-  place-items: center;
-  border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--line));
-  border-radius: 50%;
-  background: color-mix(in srgb, var(--accent) 13%, var(--surface));
-  color: var(--accent-deep);
-  font-size: 0.78rem;
-  font-weight: 900;
-}
-
-.achievement-svg {
-  width: 25px;
-  height: 25px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.8;
 }
 
 .resume-band {
@@ -1101,8 +1062,7 @@ h3 {
   }
 
   .skill-grid,
-  .cert-grid,
-  .achievement-grid {
+  .cert-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1197,8 +1157,7 @@ h3 {
 
   .skill-grid,
   .about-highlights,
-  .cert-grid,
-  .achievement-grid {
+  .cert-grid {
     grid-template-columns: 1fr;
   }
 
